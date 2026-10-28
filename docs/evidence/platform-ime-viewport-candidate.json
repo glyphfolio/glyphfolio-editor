@@ -1,0 +1,57 @@
+{
+  "AXTrusted" : true,
+  "candidateAnchorGeometry" : {
+    "identification" : "Inference from controlled conversion timing and scoped popup bounds; no window titles or pixels read",
+    "nearbyScopedPopup" : true
+  },
+  "demoPID" : 93244,
+  "editorBounds" : {
+    "height" : 340,
+    "width" : 1030,
+    "x" : 989,
+    "y" : 428.484375
+  },
+  "kind" : "native-conversion-candidate-metadata",
+  "mode" : "japanese",
+  "pixelsRead" : false,
+  "postEventAllowed" : true,
+  "selectedRangeBounds" : {
+    "height" : 34.437503814697266,
+    "width" : 0,
+    "x" : 1094.7806396484375,
+    "y" : 448.484375
+  },
+  "selectedUTF16Range" : {
+    "length" : 0,
+    "location" : 7
+  },
+  "windows" : [
+    {
+      "bounds" : {
+        "Height" : 140,
+        "Width" : 124,
+        "X" : 1052,
+        "Y" : 494
+      },
+      "layer" : 20,
+      "owner" : "standalone-demo",
+      "pid" : 93244,
+      "rank" : 56,
+      "windowID" : 32773
+    },
+    {
+      "bounds" : {
+        "Height" : 882,
+        "Width" : 1050,
+        "X" : 979,
+        "Y" : 210
+      },
+      "layer" : 0,
+      "owner" : "standalone-demo",
+      "pid" : 93244,
+      "rank" : 59,
+      "windowID" : 32765
+    }
+  ],
+  "windowTitlesRead" : false
+}

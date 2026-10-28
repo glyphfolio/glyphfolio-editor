@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "kind": "standalone-native-accessibility-recovery",
+  "pid": 493,
+  "scope": "Disposable glyphfolio-editor-demo synthetic text only",
+  "precedingReport": "platform-ax.json",
+  "observedFailure": "Native AXScrollToVisible returned success but remained offscreen; subsequent AXValue changes were not acknowledged before timeout",
+  "recovery": "One exact-PID unmodified ArrowRight event woke the idle app and allowed its already queued source restoration to apply",
+  "restoredSourceBytes": 491,
+  "restoredSourceSHA256": "db2cbf90042616a4ed6faabb54cd94d98543af89ef6bec9e09cb186b542424eb",
+  "voiceOverAfter": false,
+  "inputSourceChanged": false,
+  "clipboardAccessed": false,
+  "qualification": "FAIL retained: an extra native key must not be required to service accessibility actions",
+  "limits": [
+    "The queued source restoration was verified; the original selection from that completed probe was no longer available to the recovery process",
+    "VoiceOver startup was not reached in the failed run; no VoiceOver interaction is qualified"
+  ]
+}

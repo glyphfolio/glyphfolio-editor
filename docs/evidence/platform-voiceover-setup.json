@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "kind": "approved-temporary-voiceover-setup-probe",
+  "baseline": {
+    "voiceOverEnabled": false,
+    "inputSource": "com.apple.keylayout.US",
+    "quickstartPID": 1563
+  },
+  "normalSetupBarrier": {
+    "bundleIdentifier": "com.apple.VoiceOverQuickstart",
+    "window": "Welcome to VoiceOver",
+    "action": "Use VoiceOver",
+    "doNotShowAgainBefore": 0,
+    "doNotShowAgainChanged": false,
+    "pressResult": -25204,
+    "voiceOverEnabledAfterPress": true
+  },
+  "qualification": {
+    "status": "PARTIAL",
+    "reason": "The normal welcome barrier was identified and its Use VoiceOver button reached the enabled flag, but no actual screen-reader reading, navigation, selection, editing or offscreen workflow was qualified",
+    "knownVoiceOverBundleProcessCountAtObservation": 0,
+    "limits": [
+      "AXPress timed out while the system state changed; its return code alone does not establish failure or success",
+      "The enabled flag alone does not establish that the screen-reader service is running correctly",
+      "In-process restoration checks remained stale or delayed; a later independent process confirmed the original off state"
+    ]
+  },
+  "restoration": {
+    "normalShortcutAttempt": "Command-F5",
+    "normalQuickstartRelaunch": "Opened tutorial instead of the welcome dialog; closed only the setup app launched for this test",
+    "freshIndependentNSWorkspaceVoiceOverEnabled": false,
+    "quickstartProcessesRemaining": 0,
+    "knownVoiceOverBundleProcessesRemaining": 0,
+    "inputSourceChanged": false,
+    "clipboardAccessed": false,
+    "editorSourceChanged": false,
+    "systemSettingsOpened": false,
+    "preferenceDatabaseOrTCCWrites": false
+  }
+}

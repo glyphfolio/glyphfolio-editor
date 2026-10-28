@@ -1,0 +1,40 @@
+{
+  "actualWidgetKeyboardPath" : false,
+  "checks" : [
+    {
+      "check" : "native_permissions",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "exact_standalone_target",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "clipboard_capture_before_mutation",
+      "detail" : {
+        "reason" : "Cannot preserve a pasteboard representation; no test mutation performed"
+      },
+      "status" : "PARTIAL"
+    }
+  ],
+  "clipboardCaptured" : false,
+  "clipboardPayloadLogged" : false,
+  "clipboardRepresentationsRestored" : false,
+  "inputSourcesChanged" : false,
+  "kind" : "native-clipboard-widget-proof",
+  "mockClipboardUsed" : false,
+  "nativeFocusClickPosted" : false,
+  "nativeShortcutsPosted" : 0,
+  "newClipboardOwnerObserved" : false,
+  "pid" : 92976,
+  "selectionRestored" : false,
+  "sourceRestored" : false,
+  "status" : "PARTIAL",
+  "voiceOverChanged" : false
+}

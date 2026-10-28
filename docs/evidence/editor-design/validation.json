@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-28",
+  "scope": "GlyphFolio-inspired appearance and declarative configuration",
+  "workspace_tests": 189,
+  "official_commonmark_cases_inside_parser_test": 652,
+  "strict_clippy": "PASS",
+  "formatting": "PASS",
+  "rustdoc": "PASS",
+  "native_dependency_boundaries": "PASS",
+  "native_visual_cases": [
+    {
+      "case": "light",
+      "result": "PASS",
+      "inspected": true,
+      "png_sha256": "6d7812a914045c97a2241d559265b04f7773b418d41683573249d5d4bd3c6de9"
+    },
+    {
+      "case": "dark",
+      "result": "PASS",
+      "inspected": true,
+      "png_sha256": "5703cb4d54e2fa5272b8df995913b5a411bd89ed0badc006391bbd25675be2c4"
+    },
+    {
+      "case": "narrow",
+      "result": "PASS",
+      "inspected": true,
+      "png_sha256": "5be2a5ef58dc2f6dc81554cdb2278623c7597ad006bd4768771a7baa864875f6"
+    },
+    {
+      "case": "compact",
+      "result": "PASS",
+      "inspected": true,
+      "png_sha256": "d1dd56995c34aab24376d77f6053e9ef042234c5e71affad5f824ab50e56b359"
+    },
+    {
+      "case": "minimal",
+      "result": "PASS",
+      "inspected": true,
+      "png_sha256": "6afbe6fe3cdbc4af4e0fceaf7c75e42fbda721defafa497fbe57c339d5f651f5"
+    },
+    {
+      "case": "full",
+      "result": "PASS",
+      "inspected": true,
+      "png_sha256": "eca8cacba31bef524d6c2f46980dec13b31e6907db1c4fe4172e3149acd8b2a0"
+    }
+  ],
+  "native_fixture_independent_of_user_config": "PASS",
+  "all_default_editing_features_retained": true,
+  "prior_native_qualification_gaps_unchanged": true,
+  "glyphfolio_applications_modified": false,
+  "unsigned_release_sha256": "c0a8f90c0564d1923c1cdf7f25bf9128200bbf77ea69ff7f27e7673f5d938db2",
+  "signed_review_bundle_sha256": "4b7d6545a4163d701b0904d4c0d6e6f4f51dd5029af24d57e0986abbf1185873"
+}

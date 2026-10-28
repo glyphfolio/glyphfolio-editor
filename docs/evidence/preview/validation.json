@@ -1,0 +1,51 @@
+{
+  "version": "0.1.0",
+  "status": "preview prepared locally; unpublished",
+  "date": "2026-10-28",
+  "host": "aarch64-apple-darwin",
+  "rustc": "1.99.1",
+  "tests": {
+    "passed": 230,
+    "failed": 0
+  },
+  "checks": {
+    "format": "PASS",
+    "workspace_tests": "PASS",
+    "clippy_all_targets_warnings_denied": "PASS",
+    "rustdoc_warnings_denied": "PASS",
+    "native_dependency_boundaries": "PASS",
+    "public_file_hygiene": "PASS",
+    "release_demo_build": "PASS",
+    "local_markdown_links": "PASS"
+  },
+  "license_inventory": {
+    "target": "aarch64-apple-darwin",
+    "packages": 213,
+    "unspecified": 0,
+    "includes_dev_dependencies": true
+  },
+  "release_executable_sha256": "5cc1087425663cbbaf8b712d0ee3f630e14204930b533cdab1d719c25b180165",
+  "not_run": [
+    "Remote CI",
+    "Windows/Linux runtime",
+    "Full cross-target dependency inventory (uncached target-only packages)",
+    "New OS IME/clipboard/screen-reader qualification"
+  ],
+  "publication": {
+    "remote_configured": false,
+    "commit_created": false,
+    "tag_created": false,
+    "pushed": false,
+    "crates_published": false
+  },
+  "privacy": "Historical local paths redacted; original logs kept only under ignored target/.",
+  "required_rust": "1.99.1",
+  "toolchain_policy": "Matches local validation; no older toolchain support claimed. Remote CI remains unrun.",
+  "toolchain_policy_recheck": {
+    "required_rust": "1.99.1",
+    "tests_passed": 230,
+    "preview_checks": "PASS",
+    "log": "rust-toolchain-policy-checks.log",
+    "note": "Rechecked after raising Cargo rust-version and adopting isolate_lowest_one. Prior release binary evidence remains historical."
+  }
+}

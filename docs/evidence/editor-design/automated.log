@@ -1,0 +1,348 @@
+   Compiling glyphfolio-editor-egui v0.1.0 (<workspace>/crates/editor-egui)
+   Compiling glyphfolio-editor-demo v0.1.0 (<workspace>/examples/standalone-egui)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.79s
+     Running unittests src/lib.rs (target/debug/deps/glyphfolio_editor_core-f2a80bc687c2203b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/adversarial.rs (target/debug/deps/adversarial-506016ad45072a28)
+
+running 16 tests
+test identical_bytes_do_not_allow_cross_document_transactions_or_save_acknowledgements ... ok
+test invalid_post_edit_selection_rejects_the_entire_transaction ... ok
+test rejected_multibyte_edit_is_atomic_and_does_not_publish_a_change ... ok
+test acknowledging_an_in_flight_save_does_not_mark_newer_typing_clean ... ok
+test adjacent_deletions_have_an_unambiguous_combined_inverse ... ok
+test new_edits_after_undo_invalidate_only_the_redo_branch ... ok
+test deletion_from_an_interior_scalar_caret_removes_a_whole_grapheme ... ok
+test raw_markdown_bom_mixed_endings_and_trailing_spaces_survive_undo ... ok
+test reordered_save_acknowledgements_cannot_overwrite_the_latest_saved_state ... ok
+test snapshots_remain_immutable_and_cannot_be_reused_after_undo ... ok
+test user_deletion_expands_partial_grapheme_selections_in_both_directions ... ok
+test zero_history_budget_still_commits_without_retaining_an_undo_step ... ok
+test unordered_multi_changes_use_one_base_snapshot_and_inverse_lengths ... ok
+test user_insertions_join_following_marks_without_leaving_an_interior_caret ... ok
+test a_grapheme_larger_than_rope_chunks_moves_as_one_user_unit ... ok
+test history_memory_stays_bounded_while_moving_entries_between_stacks ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/commands.rs (target/debug/deps/commands-86b4342c0c966935)
+
+running 17 tests
+test fenced_code_uses_a_longer_delimiter_and_does_not_continue_markdown_inside ... ok
+test collapsed_inline_formatting_places_caret_inside_an_explicit_source_pair ... ok
+test enter_exits_empty_structural_markers_one_level_without_phantom_newlines ... ok
+test backspace_removes_only_the_current_structural_prefix_or_one_grapheme ... ok
+test fencing_and_unfencing_preserve_eof_ending_policy_and_bom ... ok
+test inline_commands_expand_partial_graphemes_and_keep_reverse_selection ... ok
+test headings_preserve_bom_containers_and_only_selected_physical_lines ... ok
+test exact_unicode_flanking_preserves_intraword_marks_and_removes_real_envelopes ... ok
+test enter_continues_lists_quotes_and_preserves_local_crlf ... ok
+test whitespace_only_formatting_and_existing_heading_level_are_noops ... ok
+test marks_preserve_nested_strong_emphasis_and_existing_marker_spelling ... ok
+test inline_code_chooses_safe_delimiters_and_padding_without_mutating_content ... ok
+test multiline_marks_preserve_blank_lines_endings_and_unselected_source ... ok
+test list_and_quote_operations_preserve_nested_containers_and_exact_undo ... ok
+test literal_marks_are_preserved_when_they_are_not_a_commonmark_envelope ... ok
+test indentation_is_an_atomic_source_edit_and_outdent_handles_tabs ... ok
+test arbitrary_commands_remain_atomic_and_fully_undo ... ok
+
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+
+     Running tests/engine_contract.rs (target/debug/deps/engine_contract-e9363c021e191426)
+
+running 12 tests
+test explicit_scalar_conversions_refuse_mid_character_bytes ... ok
+test noops_overlaps_and_reserved_history_origins_are_refused_atomically ... ok
+test mapping_respects_insert_affinity_and_replacement_length ... ok
+test coalesced_typing_is_one_step_but_cursor_discontinuity_is_a_boundary ... ok
+test explicit_typing_groups_still_require_adjacent_carets ... ok
+test multi_edit_inverse_and_observer_changes_use_their_actual_base_revision ... ok
+test paste_composition_and_newline_never_join_typing ... ok
+test grapheme_commands_remove_combining_sequences_emoji_and_crlf_as_units ... ok
+test bounded_subscriber_disconnects_on_lag_and_never_blocks_edits ... ok
+test disjoint_multi_changes_and_inverse_agree_with_a_string_model ... ok
+test random_edit_undo_redo_and_stale_submissions_follow_a_history_model ... ok
+test arbitrary_unicode_edits_match_a_string_model_and_fully_undo ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.71s
+
+     Running unittests src/main.rs (target/debug/deps/glyphfolio_editor_demo-34a3a28889168fce)
+
+running 2 tests
+test native_probe::tests::probe_has_an_initial_window_input_settle_period ... ok
+test native_probe::tests::japanese_probe_contains_romaji_and_conversion_keys_not_injected_japanese_text ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/glyphfolio_editor_egui-b6f82d2c83500664)
+
+running 62 tests
+test accessibility::tests::row_index_preserves_original_priority_for_overlaps_and_nearest_gaps ... ok
+test accessibility::tests::shared_cache_invalidates_placement_surface_and_document_identity ... ok
+test accessibility::tests::accessible_word_starts_cross_soft_wraps_without_whitespace_words ... ok
+test accessibility::tests::mixed_direction_runs_use_directional_positions_and_keep_all_offscreen_text ... ok
+test accessibility::tests::projected_headings_gain_levels_without_changing_editable_text_contract ... ok
+test accessibility::tests::oversized_grapheme_transport_is_structural_and_rejects_scalar_interiors ... ok
+test accessibility::tests::indexed_rows_match_containment_geometry_for_unicode_bidi_and_wrapped_endings ... ok
+test chrome::tests::actual_toolbar_click_dispatches_shared_formatting_and_undo ... ok
+test chrome::tests::feature_filter_and_composition_prevent_toolbar_mutation ... ok
+test chrome::tests::hidden_toolbar_does_not_change_document_or_history ... ok
+test chrome::tests::narrow_toolbars_keep_all_buttons_and_the_following_footer_inside_the_column ... ok
+test clipboard::tests::copy_publishes_exact_source_without_history_or_revision_changes ... ok
+test clipboard::tests::cut_requires_successful_publication_and_is_one_undo_step ... ok
+test clipboard::tests::stale_selection_or_session_is_rejected_before_clipboard_mutation ... ok
+test panel::tests::disabled_configured_command_is_refused_by_panel_dispatch ... ok
+test accessibility::tests::borrowed_build_invalidates_foreign_geometry_but_can_reuse_owned_arc ... ok
+test panel::tests::invalid_panel_configuration_does_not_mutate_document_or_view ... ok
+test accessibility::tests::shared_cache_owns_shape_and_arc_make_mut_cannot_reuse_stale_geometry ... ok
+test accessibility::tests::shared_semantics_reuse_bindings_and_only_refresh_root_selection ... ok
+test accessibility::tests::source_order_units_and_crlf_roundtrip_without_duplicate_parentage ... ok
+test accessibility::tests::rich_decoration_rejects_foreign_projection_and_preedit_geometry ... ok
+test accessibility::tests::logical_paragraph_identity_survives_an_edit_without_reusing_unrelated_runs ... ok
+test panel::tests::panel_preserves_host_height_for_the_scrollable_writing_surface ... ok
+test panel::tests::drop_in_panel_keyboard_formatting_reuses_document_and_history ... ok
+test presentation::tests::composition_is_disposable_source_overlay_and_keeps_replacement_mapping ... ok
+test presentation::tests::configured_typography_reflows_without_editing_source_or_history ... ok
+test accessibility::tests::ten_thousand_line_semantics_have_bounded_row_index_work_and_reuse ... ok
+test presentation::tests::invalid_geometry_or_overlay_returns_error_without_document_mutation ... ok
+test presentation::tests::active_block_reveal_changes_projection_without_history_and_eof_reveals_only_last ... ok
+test accessibility::tests::removed_and_foreign_document_ids_cannot_be_reused_for_actions ... ok
+test presentation::tests::empty_hidden_and_unfinished_blocks_keep_finite_navigable_geometry ... ok
+test presentation::tests::accessibility_projects_complete_offscreen_text_and_reuses_full_geometry ... ok
+test presentation::tests::host_scroll_in_same_window_is_respected_when_geometry_is_reused ... ok
+test tests::accessible_selection_replacement_uses_transactions ... ok
+test tests::composition_provisional_cancel_safe_and_one_history_step ... ok
+test presentation::tests::mode_and_prefix_edit_keep_logical_scroll_anchor ... ok
+test presentation::tests::rich_projection_styles_and_geometry_refer_to_canonical_source ... ok
+test presentation::tests::giant_styled_paragraph_uses_explicit_source_safety_fallback ... ok
+test accessibility::tests::stable_line_and_run_identity_survives_prefix_insertion_and_soft_reflow ... ok
+test tests::composing_escape_cancels_without_surrendering_editor_focus ... ok
+test presentation::tests::source_large_document_only_shapes_visible_and_remote_caret_neighbors ... ok
+test tests::dismissed_preedit_keeps_session_guard_after_host_document_replacement ... ok
+test tests::dismissed_preedit_rejects_same_revision_selection_change ... ok
+test presentation::tests::long_rich_fence_is_fragmented_at_hard_lines_and_preserves_all_display_text ... ok
+test tests::geometry_hits_legal_graphemes_and_roundtrips_carets ... ok
+test presentation::tests::glyphfolio_rich_profile_uses_heading_and_fence_reference_metrics ... ok
+test tests::host_formatting_quarantines_old_native_commit_without_losing_history ... ok
+test tests::native_duplicate_suppression_consumes_only_one_expected_event ... ok
+test tests::native_double_and_triple_click_select_word_and_full_crlf_line ... ok
+test presentation::tests::ten_thousand_style_rows_only_query_and_decorate_the_paint_viewport ... ok
+test tests::stale_composition_cannot_mutate_changed_document ... ok
+test tests::navigation_and_escape_keep_editor_focus_across_frames ... ok
+test tests::native_event_route_keeps_preedit_provisional_and_positions_candidates ... ok
+test tests::rich_accessible_collapsed_caret_does_not_select_hidden_delimiters ... ok
+test tests::exact_fallback_paint_culls_offscreen_glyphs_and_indexes_styles ... ok
+test tests::window_focus_loss_cancels_and_rejects_late_commit ... ok
+test tests::horizontal_arrows_collapse_selections_without_an_extra_step ... ok
+test tests::rich_source_toggle_preserves_bytes_selection_and_history ... ok
+test tests::source_shortcuts_format_indent_and_continue_lists_with_shared_undo ... ok
+test tests::word_navigation_skips_whitespace_and_keeps_combining_text_intact ... ok
+test tests::native_paste_preserves_raw_crlf_without_overriding_another_payload ... ok
+test tests::intervening_native_events_end_commit_duplicate_suppression ... ok
+
+test result: ok. 62 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.98s
+
+     Running tests/configuration.rs (target/debug/deps/configuration-777bc6f2660c97fb)
+
+running 8 tests
+test feature_policy_covers_structural_commands_without_disabling_base_editing ... ok
+test toolbar_visibility_is_separate_from_command_availability ... ok
+test sparse_settings_keep_safe_defaults_and_preserve_explicit_toolbar_order ... ok
+test an_empty_toolbar_and_rich_only_configuration_are_valid ... ok
+test geometry_rejects_nonfinite_and_out_of_range_values_before_application ... ok
+test unknown_keys_enums_versions_and_conflicting_modes_are_errors ... ok
+test explicit_loading_never_creates_missing_files_or_changes_existing_data ... ok
+test shipped_profiles_match_the_public_typed_presets ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/configured_input.rs (target/debug/deps/configured_input-791b60daacf294ad)
+
+running 6 tests
+test temporarily_disabling_history_retains_the_stack_and_restores_both_entry_points ... ok
+test disabled_bold_blocks_keyboard_and_host_tools_without_touching_source_or_history ... ok
+test invalid_configuration_keeps_the_last_settings_document_and_selection ... ok
+test disabled_clipboard_never_calls_transport_or_applies_paste_and_cut ... ok
+test a_hidden_toolbar_preserves_keyboard_formatting_and_shared_undo ... ok
+test configuring_during_ime_preserves_provisional_source_and_defers_rich_until_commit ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+
+     Running tests/input_session.rs (target/debug/deps/input_session-d388bc9b39bb8285)
+
+running 16 tests
+test host_revision_change_invalidates_old_native_owner_without_undoing_host_edit ... ok
+test host_document_replacement_invalidates_old_native_owner ... ok
+test dismissed_preedit_does_not_follow_a_same_revision_caret_change ... ok
+test epoch_can_accept_successive_commit_only_input_without_preedit ... ok
+test empty_commit_cancels_provisional_text_and_surrounding_delete ... ok
+test cancelling_staged_surrounding_deletion_persists_nothing ... ok
+test duplicate_text_suppression_is_one_event_and_can_be_cleared ... ok
+test committed_base_character_joins_following_mark_with_a_legal_caret ... ok
+test empty_preedit_retains_selection_and_close_mode_barriers_until_commit ... ok
+test fresh_explicit_epoch_accepts_commit_only_emoji_after_cancellation ... ok
+test invalid_preedit_scalar_range_does_not_replace_valid_overlay ... ok
+test plain_display_never_exposes_a_second_authoritative_document ... ok
+test identical_committed_replacement_collapses_selection_without_content_revision ... ok
+test surrounding_counts_clamp_at_source_edges_and_zero_is_noop ... ok
+test surrounding_deletion_during_preedit_commits_as_one_composition ... ok
+test standalone_surrounding_delete_counts_scalars_and_refreshes_owner ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rich_regression.rs (target/debug/deps/rich_regression-cf57b13091639a8d)
+
+running 5 tests
+test partial_transformed_accessible_selection_requires_reveal_before_editing ... ok
+test deleting_revealed_inline_content_retains_surrounding_source ... ok
+test folded_accessible_caret_stays_collapsed_before_typing ... ok
+test replacing_accessible_folded_content_preserves_markdown_delimiters ... ok
+test formatting_does_not_strip_commonmark_literal_delimiter_characters ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.43s
+
+     Running unittests src/lib.rs (target/debug/deps/glyphfolio_editor_host_example-b8fd260e5f98bdaf)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/glyphfolio_editor_host_example-f942c8b8f551f228)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/public_api.rs (target/debug/deps/public_api-43774842eb37f003)
+
+running 5 tests
+test host_can_apply_notifications_to_its_own_mirror_in_the_declared_coordinate_space ... ok
+test generic_host_can_embed_and_control_the_engine_without_ui_or_storage_internals ... ok
+test failed_host_save_does_not_publish_a_receipt_or_mark_source_clean ... ok
+test host_saves_actual_bytes_and_reopens_after_edit_undo_without_serialization ... ok
+test host_atomic_replacement_and_delayed_acknowledgement_preserve_newer_edits ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/lib.rs (target/debug/deps/glyphfolio_editor_layout-0ea1e933d4881d76)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/shaping.rs (target/debug/deps/shaping-7a683688d560e120)
+
+running 7 tests
+test raster_masks_and_color_images_have_complete_rgba_and_scale_consistent_bounds ... ok
+test wraps_and_clusters_expose_only_legal_carets_and_matching_hit_geometry ... ok
+test native_macos_font_coverage_and_composed_color_emoji ... ok
+test complex_script_cluster_splits_never_create_interior_grapheme_carets ... ok
+test partial_shaping_clusters_keep_grapheme_end_carets_at_full_advance_extents ... ok
+test source_bytes_endings_empty_rows_and_tab_positions_remain_exact ... ok
+test rtl_clusters_reverse_source_order_but_keep_logical_selections ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.64s
+
+     Running tests/styled_shaping.rs (target/debug/deps/styled_shaping-f5500fce8dd1c1be)
+
+running 4 tests
+test invalid_font_runs_are_refused_before_slicing ... ok
+test font_runs_preserve_source_coordinates_unicode_and_empty_lines ... ok
+test styled_multiline_document_only_visits_intersecting_font_runs ... ok
+test retained_raster_cache_is_bounded_across_many_font_sizes ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.14s
+
+     Running tests/virtualization.rs (target/debug/deps/virtualization-473504b3eede3de1)
+
+running 8 tests
+test source_line_identity_survives_prefix_edits_duplicates_and_one_line_replacement ... ok
+test line_endings_do_not_double_height_and_composite_offsets_remain_global ... ok
+test cache_budget_offscreen_resolution_and_navigation_do_not_guess_across_gaps ... ok
+test giant_paragraph_is_explicitly_deferred_and_exact_work_is_opt_in ... ok
+test invalid_blocks_are_atomic_and_typography_invalidates_measurement ... ok
+test scroll_anchor_tracks_content_through_prefix_insertion_and_width_reflow ... ok
+test ten_thousand_lines_shape_only_the_viewport_and_reuse_unchanged_cache ... ok
+test height_index_agrees_with_linear_prefix_and_y_model_after_ten_thousand_updates ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.49s
+
+     Running unittests examples/virtual_benchmark.rs (target/debug/examples/virtual_benchmark-ad97e5c53a2b2723)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/glyphfolio_editor_markdown-8530387ba475b42e)
+
+running 1 test
+test parser::resource_tests::long_literal_inline_code_does_not_allocate_an_atom_per_character ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/commonmark.rs (target/debug/deps/commonmark-0f4ed6ed97700461)
+
+running 2 tests
+test html_comparison_preserves_inline_and_preformatted_whitespace ... ok
+test official_commonmark_0312_grammar_and_projection_corpus ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+     Running tests/projection.rs (target/debug/deps/projection-9a42f2da70ac8e1b)
+
+running 18 tests
+test indexed_viewport_styles_equal_nested_interval_semantics ... ok
+test hidden_boundaries_use_affinity_and_active_block_reveal_is_exact ... ok
+test display_graphemes_and_foreign_snapshot_are_checked_before_editing ... ok
+test loose_list_continuations_keep_indent_without_another_bullet ... ok
+test inserted_duplicate_block_does_not_take_an_existing_sources_identity ... ok
+test entity_partial_edits_require_reveal_but_whole_edits_are_atomic_and_undoable ... ok
+test empty_structures_keep_source_visible_instead_of_inventing_a_content_anchor ... ok
+test nested_list_quote_fence_context_and_all_source_bytes_are_retained ... ok
+test normalized_code_crlf_and_hidden_delimiter_graphemes_cannot_be_partly_corrupted ... ok
+test nested_styles_entities_escapes_links_and_code_keep_original_source ... ok
+test malformed_and_unsupported_constructs_remain_source_editable_without_panics ... ok
+test stable_blocks_and_reference_style_generation_survive_unrelated_edits ... ok
+test projection_edit_into_plain_copy_preserves_every_unrelated_markdown_byte ... ok
+test projected_typing_snaps_the_caret_after_newly_joined_graphemes ... ok
+test commonmark_line_endings_have_equal_semantics_and_exact_original_ranges ... ok
+test structural_reference_and_unicode_changes_fall_back_and_match_full_parse ... ok
+test generated_structural_edits_and_undo_match_full_parse_and_projection ... ok
+test paragraph_incremental_path_matches_full_reference_after_generated_edits ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.09s
+
+     Running unittests examples/benchmark.rs (target/debug/examples/benchmark-7a06402601388b37)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/event_ranges.rs (target/debug/examples/event_ranges-4958317125e56ce1)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/glyphfolio_native_probe-8b0cc75d6590cb2f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+CLIPPY
+    Checking glyphfolio-editor-egui v0.1.0 (<workspace>/crates/editor-egui)
+    Checking glyphfolio-editor-demo v0.1.0 (<workspace>/examples/standalone-egui)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.45s
+
+DOCS
+    Checking glyphfolio-editor-egui v0.1.0 (<workspace>/crates/editor-egui)
+ Documenting glyphfolio-editor-egui v0.1.0 (<workspace>/crates/editor-egui)
+ Documenting glyphfolio-editor-demo v0.1.0 (<workspace>/examples/standalone-egui)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.91s
+   Generated <workspace>/target/doc/glyphfolio_editor_core/index.html and 6 other files

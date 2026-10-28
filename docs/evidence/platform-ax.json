@@ -1,0 +1,99 @@
+{
+  "AXTrusted" : true,
+  "checks" : [
+    {
+      "check" : "native_text_area",
+      "detail" : {
+        "originalBytes" : 846,
+        "originalSHA256" : "4ea530cded6bbc83d027f66b25cf9ab27b13c8b1556f3c30c508dbba886afa5b"
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_set_value",
+      "detail" : {
+        "fixtureBytes" : 1312,
+        "fixtureSHA256" : "78a175ef673208541f048e10f19b1e2e24299541ac246d6a68f075e405957785"
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_utf16_selection",
+      "detail" : {
+        "length" : 4,
+        "location" : 35
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_replace_selection",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_undo",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_offscreen_navigation",
+      "detail" : {
+        "actionCode" : 0,
+        "afterY" : 1055.6500244140625,
+        "becameVisible" : true,
+        "beforeY" : 2433.64990234375,
+        "wasOffscreen" : true
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "voiceover_interaction",
+      "detail" : {
+        "reason" : "--with-voiceover was not requested"
+      },
+      "status" : "NOT_RUN"
+    },
+    {
+      "check" : "demo_selection_restored",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "demo_source_restored",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "voiceover_state_restored",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    }
+  ],
+  "currentInputSource" : "com.apple.keylayout.US",
+  "kind" : "standalone-native-accessibility-probe",
+  "limits" : [
+    "Programmatic native AX\/CGEvent interaction is not physical keyboard input",
+    "No audio is captured or evaluated; VoiceOver results concern its scoped reported text and actual editable interactions",
+    "No clipboard contents are accessed",
+    "Demo source\/selection are restored; test history is ephemeral in this disposable demo",
+    "VoiceOver start\/restoration require independent process status; the enabled flag alone does not qualify screen-reader interaction"
+  ],
+  "os" : "Version 26.6.2 (Build 25G83)",
+  "overall" : "PARTIAL",
+  "pid" : 92976,
+  "postEventAllowed" : true,
+  "schema" : 1,
+  "voiceOverAfter" : false,
+  "voiceOverAfterFresh" : false,
+  "voiceOverBefore" : false
+}

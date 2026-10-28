@@ -1,0 +1,128 @@
+{
+  "actualWidgetKeyboardPath" : true,
+  "checks" : [
+    {
+      "check" : "native_permissions",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "exact_standalone_target",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "clipboard_capture_before_mutation",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_input_target",
+      "detail" : {
+        "applicationFocusedElementAvailable" : true,
+        "originalSelectionRestoredBeforeFixture" : true,
+        "physicalClickPosted" : true
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "synthetic_fixture_selection",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_command_copy",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_command_cut_acknowledged",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_command_paste",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "undo_paste_is_discrete",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "undo_cut_is_discrete",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "synthetic_markdown_unicode_crlf_publication",
+      "detail" : {
+        "crlfPairs" : 2,
+        "syntheticUTF8Bytes" : 23
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_markdown_unicode_crlf_paste_exact",
+      "detail" : {
+        "crlfPairs" : 2,
+        "exactSourceUTF8" : true
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "undo_markdown_unicode_crlf_paste_is_discrete",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "own_source_selection_restoration",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "clipboard_representations_restoration",
+      "detail" : {
+        "allItemsTypesAndBytesEqual" : true
+      },
+      "status" : "PASS"
+    }
+  ],
+  "clipboardCaptured" : true,
+  "clipboardPayloadLogged" : false,
+  "clipboardRepresentationsRestored" : true,
+  "inputSourcesChanged" : false,
+  "kind" : "native-clipboard-widget-proof",
+  "mockClipboardUsed" : false,
+  "nativeFocusClickPosted" : true,
+  "nativeShortcutsPosted" : 7,
+  "newClipboardOwnerObserved" : false,
+  "pid" : 63689,
+  "selectionRestored" : true,
+  "sourceRestored" : true,
+  "status" : "PASS",
+  "voiceOverChanged" : false
+}

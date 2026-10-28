@@ -1,0 +1,5 @@
+NATIVE_READY pid=37571 focused=false candidate=None
+SCREENSHOT_SAVED <workspace>/docs/evidence/editor-design/light.png
+NATIVE_SMOKE frames=12 revision=0 rows=25 screenshot=true os_ime=NOT_RUN screen_reader=NOT_RUN
+RENDER_METRICS mode=Rich RenderMetrics { total_blocks: 23, visible_blocks: 23, shaped_blocks: 0, cache_hits: 23, cache_entries: 23, cache_bytes: 223168, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 1, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: false, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 22, paint_style_queries: 22, paint_style_spans: 4, paint_inline_rects: 1 }
+UI_CALLBACK_TIMES cold_us=200270 warm_samples=9 warm_p95_us=258 warm_max_us=293 elapsed_ms=547 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 447, painted_glyphs: 397, style_candidates: 41, maximum_style_candidates_per_glyph: 1 }

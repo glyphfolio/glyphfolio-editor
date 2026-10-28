@@ -1,0 +1,5 @@
+NATIVE_READY pid=918 focused=false candidate=None
+SCREENSHOT_SAVED <workspace>/docs/evidence/m1-rich.png
+NATIVE_SMOKE frames=64 revision=0 rows=23 screenshot=true os_ime=NOT_RUN screen_reader=NOT_RUN
+RENDER_METRICS mode=Rich RenderMetrics { total_blocks: 23, visible_blocks: 21, shaped_blocks: 0, cache_hits: 21, cache_entries: 22, cache_bytes: 901907, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 1, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: false, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 20, paint_style_queries: 20, paint_style_spans: 5, paint_inline_rects: 1 }
+UI_CALLBACK_TIMES cold_us=63912 warm_samples=61 warm_p95_us=292 warm_max_us=378 elapsed_ms=1574 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 538, painted_glyphs: 429, style_candidates: 28, maximum_style_candidates_per_glyph: 1 }

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-28",
+  "kind": "phases-1-through-6-local-qualification",
+  "workspace_test_count": 165,
+  "official_commonmark_examples_inside_corpus_test": 652,
+  "automated_checks": {
+    "workspace_all_targets": "PASS",
+    "formatting": "PASS",
+    "strict_clippy_workspace_all_targets": "PASS",
+    "warning_free_rustdoc": "PASS",
+    "documentation_tests": "PASS",
+    "dependency_boundaries_aarch64_apple_darwin": "PASS",
+    "host_actual_save_reopen": "PASS"
+  },
+  "native_smoke_runs": 5,
+  "native_ime_final_japanese_viewport": "PASS_CONTROLLED_SOURCE_FIXTURE",
+  "native_ax_final": "PASS_EXECUTED_ACTIONS",
+  "voiceover_interaction": "SKIPPED_PROMPT_REQUIRED",
+  "final_clipboard_repeat": "SKIPPED_UNPRESERVABLE_CURRENT_REPRESENTATION_NO_MUTATION",
+  "windows_linux_runtime": "NOT_RUN",
+  "m1_release_qualified": false,
+  "rich_status": "EXPERIMENTAL_EXPLICIT_OPT_IN",
+  "large_styled_paragraph_policy": "Over32KiB_and_more_than512styles_explicit_Source_fallback",
+  "unsigned_binary_sha256": "adb09c69189bfde1be0fff27fff6de6913fb41b9a5dd5b9e2a07e44e005e696a",
+  "signed_bundle_binary_sha256": "fb09c711bd079772d94435d3d019dcee6e90c07624cc60a21d2ccafe9231d0c3",
+  "current_glyphfolio_application_modified": false,
+  "passwords_or_permission_prompts_requested": false,
+  "evidence_sha256": {
+    "docs/evidence/native-smoke-matrix.json": "bb14679bad7c0bbbaff428f318670bf0ae4b254a6a431b805c5affa04f085c9d",
+    "docs/evidence/overnight-ime-viewport.log": "f1de5e02b3a50a82fda557f71a3daca33da26a6ddcba6d9d6e12dfd639758e73",
+    "docs/evidence/platform-overnight-final-ax.json": "1563cb510bf29ee94de486f69b3f744d2ce96b6ba055e9b9b998e622c0537fbe",
+    "docs/evidence/platform-clipboard.json": "f3ef16128158f4edde71aff9f55df7b895c50aa24b4ba37f4c6a0c35706de388"
+  }
+}

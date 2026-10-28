@@ -1,0 +1,7 @@
+    Checking glyphfolio-editor-core v0.1.0 (<workspace>/crates/editor-core)
+    Checking glyphfolio-editor-markdown v0.1.0 (<workspace>/crates/editor-markdown)
+    Checking glyphfolio-editor-layout v0.1.0 (<workspace>/crates/editor-layout)
+    Checking glyphfolio-editor-host-example v0.1.0 (<workspace>/examples/host-integration)
+    Checking glyphfolio-editor-egui v0.1.0 (<workspace>/crates/editor-egui)
+    Checking glyphfolio-editor-demo v0.1.0 (<workspace>/examples/standalone-egui)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.97s

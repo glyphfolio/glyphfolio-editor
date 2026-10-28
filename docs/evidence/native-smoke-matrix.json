@@ -1,0 +1,62 @@
+{
+  "kind": "native-demo-smoke-matrix",
+  "native_ime": "NOT_RUN_IN_SMOKE",
+  "screen_reader": "NOT_RUN",
+  "runs": [
+    {
+      "case": "m1-source",
+      "exit_code": 0,
+      "elapsed_seconds": 2.728,
+      "peak_sampled_rss_kib": 216240,
+      "rss_method": "own child ps sample every approximately 100 ms; not allocator/GPU accounting",
+      "screenshot_saved": true,
+      "smoke_pass": true,
+      "callback_summary": "UI_CALLBACK_TIMES cold_us=63272 warm_samples=61 warm_p95_us=283 warm_max_us=344 elapsed_ms=1719 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 545, painted_glyphs: 523, style_candidates: 0, maximum_style_candidates_per_glyph: 0 }",
+      "render_summary": "RENDER_METRICS mode=Source RenderMetrics { total_blocks: 31, visible_blocks: 26, shaped_blocks: 0, cache_hits: 26, cache_entries: 27, cache_bytes: 742772, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 0, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: false, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 25, paint_style_queries: 0, paint_style_spans: 0, paint_inline_rects: 0 }"
+    },
+    {
+      "case": "m1-rich",
+      "exit_code": 0,
+      "elapsed_seconds": 2.295,
+      "peak_sampled_rss_kib": 214384,
+      "rss_method": "own child ps sample every approximately 100 ms; not allocator/GPU accounting",
+      "screenshot_saved": true,
+      "smoke_pass": true,
+      "callback_summary": "UI_CALLBACK_TIMES cold_us=63912 warm_samples=61 warm_p95_us=292 warm_max_us=378 elapsed_ms=1574 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 538, painted_glyphs: 429, style_candidates: 28, maximum_style_candidates_per_glyph: 1 }",
+      "render_summary": "RENDER_METRICS mode=Rich RenderMetrics { total_blocks: 23, visible_blocks: 21, shaped_blocks: 0, cache_hits: 21, cache_entries: 22, cache_bytes: 901907, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 1, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: false, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 20, paint_style_queries: 20, paint_style_spans: 5, paint_inline_rects: 1 }"
+    },
+    {
+      "case": "m1-large-source",
+      "exit_code": 0,
+      "elapsed_seconds": 2.088,
+      "peak_sampled_rss_kib": 230256,
+      "rss_method": "own child ps sample every approximately 100 ms; not allocator/GPU accounting",
+      "screenshot_saved": true,
+      "smoke_pass": true,
+      "callback_summary": "UI_CALLBACK_TIMES cold_us=40876 warm_samples=61 warm_p95_us=440 warm_max_us=515 elapsed_ms=1443 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 584, painted_glyphs: 540, style_candidates: 0, maximum_style_candidates_per_glyph: 0 }",
+      "render_summary": "RENDER_METRICS mode=Source RenderMetrics { total_blocks: 10001, visible_blocks: 27, shaped_blocks: 0, cache_hits: 27, cache_entries: 28, cache_bytes: 1146594, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 0, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: false, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 25, paint_style_queries: 0, paint_style_spans: 0, paint_inline_rects: 0 }"
+    },
+    {
+      "case": "m1-large-rich-paragraphs",
+      "exit_code": 0,
+      "elapsed_seconds": 1.987,
+      "peak_sampled_rss_kib": 240928,
+      "rss_method": "own child ps sample every approximately 100 ms; not allocator/GPU accounting",
+      "screenshot_saved": true,
+      "smoke_pass": true,
+      "callback_summary": "UI_CALLBACK_TIMES cold_us=97956 warm_samples=61 warm_p95_us=1130 warm_max_us=1425 elapsed_ms=1386 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 293, painted_glyphs: 270, style_candidates: 114, maximum_style_candidates_per_glyph: 3 }",
+      "render_summary": "RENDER_METRICS mode=Rich RenderMetrics { total_blocks: 20000, visible_blocks: 26, shaped_blocks: 0, cache_hits: 26, cache_entries: 28, cache_bytes: 687074, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 39, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: false, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 24, paint_style_queries: 24, paint_style_spans: 14, paint_inline_rects: 0 }"
+    },
+    {
+      "case": "m1-large-rich",
+      "exit_code": 0,
+      "elapsed_seconds": 2.098,
+      "peak_sampled_rss_kib": 233344,
+      "rss_method": "own child ps sample every approximately 100 ms; not allocator/GPU accounting",
+      "screenshot_saved": true,
+      "smoke_pass": true,
+      "callback_summary": "UI_CALLBACK_TIMES cold_us=46478 warm_samples=61 warm_p95_us=508 warm_max_us=679 elapsed_ms=1448 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 562, painted_glyphs: 499, style_candidates: 0, maximum_style_candidates_per_glyph: 0 }",
+      "render_summary": "RENDER_METRICS mode=Source RenderMetrics { total_blocks: 10001, visible_blocks: 26, shaped_blocks: 0, cache_hits: 26, cache_entries: 28, cache_bytes: 1146594, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 0, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: true, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 24, paint_style_queries: 0, paint_style_spans: 0, paint_inline_rects: 0 }"
+    }
+  ]
+}

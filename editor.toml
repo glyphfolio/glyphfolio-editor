@@ -1,0 +1,57 @@
+# GlyphFolio-style native editor. This configures the reusable editor surface;
+# it does not load the GlyphFolio application or an existing editor engine.
+schema_version = 1
+
+[editor]
+default_presentation = "rich"
+# Native screen-reader qualification remains incomplete, so Rich is explicit.
+allow_experimental_rich = true
+
+[appearance]
+theme = "system" # system, light, or dark
+frame = false
+
+[document]
+font_size = 16.0
+line_height = 1.6
+max_width = 760.0
+padding = 32.0
+inner_padding = 0.0
+
+[toolbar]
+visible = true
+# Change the group order, or remove tools to hide their toolbar buttons.
+# Hidden tools retain their keyboard/API behavior while their feature is on.
+groups = [
+  ["undo", "redo"],
+  ["heading"],
+  ["bold", "italic", "strikethrough", "link", "inline_code"],
+  ["bullet_list", "ordered_list", "task_list", "task_checked", "table", "blockquote", "code_fence"],
+  ["outdent", "indent"],
+  ["paste", "presentation", "save"],
+]
+
+[features]
+# Set a feature to false to disable its supplied tools and interactions.
+# Existing Markdown content and undo history are always preserved.
+bold = true
+italic = true
+inline_code = true
+headings = true
+lists = true
+blockquote = true
+code_fence = true
+indentation = true
+links = true
+history = true
+clipboard = true
+source = true
+rich = true
+
+[status]
+visible = true
+word_count = true
+
+[diagnostics]
+visible = false
+native_input_controls = false

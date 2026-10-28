@@ -1,0 +1,32 @@
+INPUT_SOURCE_STATE {"event":"before","id":"com.apple.keylayout.US","requested":"com.apple.inputmethod.Kotoeri.RomajiTyping.Japanese","targetWasEnabled":true}
+INPUT_SOURCE_STATE {"event":"temporaryEnabled","ids":["com.apple.inputmethod.Kotoeri.RomajiTyping"]}
+INPUT_SOURCE_STATE {"event":"parentEnabled","id":"com.apple.inputmethod.Kotoeri.RomajiTyping","status":0}
+INPUT_SOURCE_STATE {"alreadyEnabled":true,"event":"selected","id":"com.apple.inputmethod.Kotoeri.RomajiTyping.Japanese"}
+NATIVE_READY pid=15139 focused=false candidate=None
+INPUT_SOURCE_STATE {"childActive":true,"event":"activeSource","id":"com.apple.inputmethod.Kotoeri.RomajiTyping.Japanese"}
+NATIVE_KEYS textAreaFound=true focusCode=0
+NATIVE_KEYS ready pid=15139 mode=japanese startDelay=2.0 selectedFixture=true
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "n", active_range_chars: Some(1..1) })
+NATIVE_KEYS posted=1 scanCode=45
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "に", active_range_chars: Some(1..1) })
+NATIVE_KEYS posted=2 scanCode=34
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "にh", active_range_chars: Some(2..2) })
+NATIVE_KEYS posted=3 scanCode=4
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "にほ", active_range_chars: Some(2..2) })
+NATIVE_KEYS posted=4 scanCode=31
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "にほn", active_range_chars: Some(3..3) })
+NATIVE_KEYS posted=5 scanCode=45
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "日本", active_range_chars: Some(0..2) })
+NATIVE_KEYS posted=6 scanCode=49
+NATIVE_KEYS candidateMetadata=WRITTEN windows=2
+NATIVE_KEYS posted=7 scanCode=36
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "", active_range_chars: None })
+NATIVE_OBSERVER_EVENT Ime(Commit("日本"))
+NATIVE_OBSERVER_EVENT Key { key: Enter, physical_key: Some(Enter), pressed: false, repeat: false, modifiers: Modifiers::NONE }
+NATIVE_KEYS posted=8 scanCode=36
+NATIVE_KEYS transport=POSTED mode=japanese keys=8 nativeResult=OBSERVER_REQUIRED
+NATIVE_INPUT mode=JapaneseRomaji result=PASS preedit=7 commit=1 text_events=0 rejected=0 provisional_source_unchanged=true undo_restored=true source="left 日本 right"
+INPUT_SOURCE_STATE {"event":"childExit","interrupted":false,"status":0,"timedOut":false}
+INPUT_SOURCE_STATE {"event":"temporaryEnabled","ids":["com.apple.inputmethod.Kotoeri.RomajiTyping"]}
+INPUT_SOURCE_STATE {"event":"temporaryDisabled","id":"com.apple.inputmethod.Kotoeri.RomajiTyping","status":0,"stillEnabled":false}
+INPUT_SOURCE_STATE {"actual":"com.apple.keylayout.US","enabledConfigurationRestored":true,"enabledFlagsRestored":true,"event":"restored","expected":"com.apple.keylayout.US","operationalSourcesRestored":true,"restored":true,"status":0,"temporarilyEnabledIDs":["com.apple.inputmethod.Kotoeri.RomajiTyping"]}

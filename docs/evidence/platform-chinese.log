@@ -1,0 +1,45 @@
+INPUT_SOURCE_STATE {"event":"before","id":"com.apple.keylayout.US","requested":"com.apple.inputmethod.SCIM.ITABC","targetWasEnabled":false}
+INPUT_SOURCE_STATE {"event":"temporaryEnabled","ids":["com.apple.inputmethod.SCIM"]}
+INPUT_SOURCE_STATE {"event":"parentEnabled","id":"com.apple.inputmethod.SCIM","status":0}
+INPUT_SOURCE_STATE {"event":"temporaryEnabled","ids":["com.apple.inputmethod.SCIM.ITABC","com.apple.inputmethod.SCIM"]}
+INPUT_SOURCE_STATE {"alreadyEnabled":false,"event":"selected","id":"com.apple.inputmethod.SCIM.ITABC"}
+INPUT_SOURCE_STATE {"childActive":true,"event":"activeSource","id":"com.apple.inputmethod.SCIM.ITABC"}
+NATIVE_OBSERVER_FOCUS window=false widget=false
+NATIVE_READY pid=93173 focused=false candidate=None
+NATIVE_OBSERVER_FOCUS window=true widget=true
+NATIVE_OBSERVER_EVENT WindowFocused(true)
+NATIVE_OBSERVER_EVENT WindowFocused(true)
+NATIVE_OBSERVER_EVENT PointerButton { pos: [32.0 173.5], button: Primary, pressed: true, modifiers: Modifiers::NONE }
+NATIVE_OBSERVER_EVENT PointerButton { pos: [32.0 173.5], button: Primary, pressed: false, modifiers: Modifiers::NONE }
+NATIVE_KEYS textAreaFound=true focusCode=0
+NATIVE_KEYS nativeFocusClick=true
+NATIVE_KEYS ready pid=93173 mode=chinese startDelay=2.0 selectedFixture=true
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "z", active_range_chars: Some(1..1) })
+NATIVE_KEYS posted=1 scanCode=6
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "zh", active_range_chars: Some(2..2) })
+NATIVE_KEYS posted=2 scanCode=4
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "zho", active_range_chars: Some(3..3) })
+NATIVE_KEYS posted=3 scanCode=31
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "zhon", active_range_chars: Some(4..4) })
+NATIVE_KEYS posted=4 scanCode=45
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "zhong", active_range_chars: Some(5..5) })
+NATIVE_KEYS posted=5 scanCode=5
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "zhong w", active_range_chars: Some(7..7) })
+NATIVE_KEYS posted=6 scanCode=13
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "zhong we", active_range_chars: Some(8..8) })
+NATIVE_KEYS posted=7 scanCode=14
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "zhong wen", active_range_chars: Some(9..9) })
+NATIVE_KEYS posted=8 scanCode=45
+NATIVE_KEYS candidateMetadata=WRITTEN windows=2
+NATIVE_OBSERVER_EVENT Ime(Preedit { text: "", active_range_chars: None })
+NATIVE_OBSERVER_EVENT Ime(Commit("中文"))
+NATIVE_OBSERVER_EVENT Key { key: Space, physical_key: Some(Space), pressed: false, repeat: false, modifiers: Modifiers::NONE }
+NATIVE_KEYS posted=9 scanCode=49
+NATIVE_KEYS transport=POSTED mode=chinese keys=9 nativeResult=OBSERVER_REQUIRED
+NATIVE_INPUT mode=ChinesePinyin result=PASS preedit=9 commit=1 text_events=0 rejected=0 provisional_source_unchanged=true undo_restored=true source="left 中文 right"
+INPUT_SOURCE_STATE {"event":"childExit","interrupted":false,"status":0,"timedOut":false}
+INPUT_SOURCE_STATE {"event":"temporaryEnabled","ids":["com.apple.inputmethod.SCIM.ITABC","com.apple.inputmethod.SCIM"]}
+INPUT_SOURCE_STATE {"event":"temporaryDisabled","id":"com.apple.inputmethod.SCIM.ITABC","status":0,"stillEnabled":true}
+INPUT_SOURCE_STATE {"event":"temporaryDisabled","id":"com.apple.inputmethod.SCIM","status":0,"stillEnabled":false}
+INPUT_SOURCE_STATE {"event":"introducedConfigurationRestored","scope":"AppleEnabledInputSources only","synchronized":true}
+INPUT_SOURCE_STATE {"actual":"com.apple.keylayout.US","cachedEnabledFlagsRestored":false,"enabledConfigurationRestored":true,"enabledFlagsRestored":true,"event":"restored","expected":"com.apple.keylayout.US","independentProcessVerified":true,"operationalSourcesRestored":true,"restored":true,"status":0,"temporarilyEnabledIDs":["com.apple.inputmethod.SCIM.ITABC","com.apple.inputmethod.SCIM"]}

@@ -1,0 +1,4 @@
+NATIVE_READY pid=37570 focused=false candidate=None
+NATIVE_SMOKE frames=12 revision=0 rows=27 screenshot=false os_ime=NOT_RUN screen_reader=NOT_RUN
+RENDER_METRICS mode=Source RenderMetrics { total_blocks: 31, visible_blocks: 26, shaped_blocks: 0, cache_hits: 26, cache_entries: 27, cache_bytes: 285924, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 0, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: false, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 25, paint_style_queries: 0, paint_style_spans: 0, paint_inline_rects: 0 }
+UI_CALLBACK_TIMES cold_us=53866 warm_samples=9 warm_p95_us=218 warm_max_us=297 elapsed_ms=287 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 545, painted_glyphs: 523, style_candidates: 0, maximum_style_candidates_per_glyph: 0 }

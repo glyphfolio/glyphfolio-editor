@@ -1,0 +1,55 @@
+# Every currently implemented tool, with the native test/diagnostic controls.
+schema_version = 1
+
+[editor]
+default_presentation = "rich"
+allow_experimental_rich = true
+
+[appearance]
+theme = "system"
+frame = false
+
+[document]
+font_size = 16.0
+line_height = 1.6
+max_width = 760.0
+padding = 32.0
+inner_padding = 0.0
+
+[toolbar]
+visible = true
+groups = [
+  ["undo", "redo"],
+  ["heading"],
+  ["bold", "italic", "strikethrough", "link", "inline_code"],
+  ["bullet_list", "ordered_list", "task_list", "task_checked", "table", "blockquote", "code_fence"],
+  ["outdent", "indent"],
+  ["paste", "presentation", "save"],
+]
+
+[features]
+bold = true
+italic = true
+strikethrough = true
+task_lists = true
+tables = true
+formatted_paste = true
+inline_code = true
+headings = true
+lists = true
+blockquote = true
+code_fence = true
+indentation = true
+links = true
+history = true
+clipboard = true
+source = true
+rich = true
+
+[status]
+visible = true
+word_count = true
+
+[diagnostics]
+visible = true
+native_input_controls = true

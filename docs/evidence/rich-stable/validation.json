@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-28",
+  "tests_passed": 230,
+  "tests_failed": 0,
+  "checks": {
+    "format": "PASS",
+    "clippy_all_targets": "PASS",
+    "rustdoc_warnings_denied": "PASS",
+    "dependency_boundaries": "PASS",
+    "release_build": "PASS"
+  },
+  "release_sha256": "5cc1087425663cbbaf8b712d0ee3f630e14204930b533cdab1d719c25b180165",
+  "native_rendering": {
+    "light": {
+      "result": "PASS",
+      "screenshot": "table-light.png",
+      "scope": "Rendering only; does not establish OS interaction qualification"
+    },
+    "dark": {
+      "result": "PASS",
+      "screenshot": "table-dark.png",
+      "scope": "Rendering only; does not establish OS interaction qualification"
+    },
+    "narrow": {
+      "result": "PASS",
+      "screenshot": "table-narrow.png",
+      "scope": "Rendering only; does not establish OS interaction qualification"
+    }
+  },
+  "limits": [
+    "OS IME, clipboard transport and screen-reader interactions not requalified",
+    "Windows/Linux runtime not run",
+    "Tables use equal columns and whole-table shaping; resizing and rectangular selection deferred",
+    "Rich preedit and large styled paragraphs retain Source safeguards"
+  ]
+}

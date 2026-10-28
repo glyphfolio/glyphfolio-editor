@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "kind": "normal-input-source-ui-restoration",
+  "currentInputSource": "com.apple.keylayout.US",
+  "operationalRestoration": "PASS",
+  "exactPersistedRestoration": "PASS_AFTER_SCOPED_METADATA_RECOVERY",
+  "normalUIAction": "Select exact Pinyin - Simplified row in Keyboard Text Input dialog, press Remove, press Done",
+  "settingsWindowClosed": true,
+  "parentSource": "com.apple.inputmethod.SCIM",
+  "parentEnabledAfter": false,
+  "modeSource": "com.apple.inputmethod.SCIM.ITABC",
+  "modeEnabledBeforeFirstTest": false,
+  "modeEnabledAfterNormalUIRemoval": true,
+  "originalPersistedEntryCount": 3,
+  "persistedEntryCountAfterNormalUIRemoval": 4,
+  "persistedEntryCountAfterAuthorizedRecovery": 3,
+  "modeEnabledAfterAuthorizedRecovery": false,
+  "retainedEntry": {
+    "Bundle ID": "com.apple.inputmethod.SCIM",
+    "Input Mode": "com.apple.inputmethod.SCIM.ITABC",
+    "InputSourceKind": "Input Mode"
+  },
+  "independentFreshProcessVerification": true,
+  "preferencesWrittenDirectly": true,
+  "publicAPI": "CFPreferencesSetAppValue and CFPreferencesAppSynchronize",
+  "onlyDomainWritten": "com.apple.HIToolbox",
+  "onlyKeyWritten": "AppleEnabledInputSources",
+  "writeGuard": "Exactly the three recorded original objects plus one exact temporary SCIM.ITABC mode entry; current source US; SCIM parent disabled; abort on any unrelated change",
+  "recoveryAction": "Remove only the exact known extra mode object while preserving the three original objects, then synchronize and verify from a separate process",
+  "tccChanged": false,
+  "reason": "Both documented TISDisableInputSource and normal Keyboard source removal disabled the parent while retaining default input-mode metadata. Explicitly authorized, narrowly guarded public-preferences restoration removed only that test entry; independent verification confirmed original three-entry configuration, US selected, and both SCIM flags disabled."
+}

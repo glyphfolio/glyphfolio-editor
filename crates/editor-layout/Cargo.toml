@@ -1,0 +1,16 @@
+[package]
+name = "glyphfolio-editor-layout"
+description = "Independent layout orchestration boundary for glyphfolio-editor"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+glyphfolio-editor-core.workspace = true
+cosmic-text = "=0.19.0"
+unicode-segmentation = "=1.13.3"
+
+[lints]
+workspace = true

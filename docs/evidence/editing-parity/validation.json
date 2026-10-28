@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-28",
+  "workspace_tests": {
+    "passed": 211,
+    "failed": 0,
+    "log": "tests.log"
+  },
+  "checks": {
+    "formatting": "PASS",
+    "strict_clippy_all_targets": "PASS",
+    "rustdoc_warnings_denied": "PASS",
+    "native_dependency_boundaries": "PASS",
+    "demo_build": "PASS"
+  },
+  "demo_profile": "debug",
+  "current_demo_sha256": "1f4f6707b91cf56422f7c1b23d696fb5f1d4591f862a447a6677a15968fa8099",
+  "retained_native_previews": {
+    "binary_sha256": "d7e92e933e63accda080dee9113261eb5a888a1e59a58bee1b5f770845f5daa9",
+    "images": [
+      "light.png",
+      "dark.png",
+      "narrow.png"
+    ],
+    "scope": "Prior feature-pass captures; latest mixed-selection and link-fidelity changes tested headlessly, not a new native transport qualification."
+  },
+  "native_clipboard_roundtrip": "NOT_REQUALIFIED",
+  "screen_reader": "NOT_RUN",
+  "other_platform_runtime": "NOT_RUN",
+  "glyphfolio_applications_modified": false,
+  "full_replacement_ready": false
+}

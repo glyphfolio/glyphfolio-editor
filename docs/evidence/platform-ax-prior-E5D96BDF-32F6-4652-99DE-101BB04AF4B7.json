@@ -1,0 +1,96 @@
+{
+  "AXTrusted" : true,
+  "checks" : [
+    {
+      "check" : "native_text_area",
+      "detail" : {
+        "originalBytes" : 491,
+        "originalSHA256" : "db2cbf90042616a4ed6faabb54cd94d98543af89ef6bec9e09cb186b542424eb"
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_set_value",
+      "detail" : {
+        "fixtureBytes" : 1312,
+        "fixtureSHA256" : "78a175ef673208541f048e10f19b1e2e24299541ac246d6a68f075e405957785"
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_utf16_selection",
+      "detail" : {
+        "length" : 4,
+        "location" : 35
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_replace_selection",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_undo",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "native_offscreen_navigation",
+      "detail" : {
+        "actionCode" : 0,
+        "afterY" : 1040.6513671875,
+        "becameVisible" : true,
+        "beforeY" : 2375.6513671875,
+        "wasOffscreen" : true
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "voiceover_interaction",
+      "detail" : {
+        "reason" : "VoiceOver did not become enabled through normal Command-F5"
+      },
+      "status" : "PARTIAL"
+    },
+    {
+      "check" : "demo_selection_restored",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "demo_source_restored",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    },
+    {
+      "check" : "voiceover_state_restored",
+      "detail" : {
+
+      },
+      "status" : "PASS"
+    }
+  ],
+  "currentInputSource" : "com.apple.keylayout.US",
+  "kind" : "standalone-native-accessibility-probe",
+  "limits" : [
+    "Programmatic native AX\/CGEvent interaction is not physical keyboard input",
+    "No clipboard contents are accessed",
+    "Demo source\/selection are restored; test history is ephemeral in this disposable demo"
+  ],
+  "os" : "Version 26.6.2 (Build 25G83)",
+  "overall" : "PARTIAL",
+  "pid" : 493,
+  "postEventAllowed" : true,
+  "schema" : 1,
+  "voiceOverAfter" : false,
+  "voiceOverBefore" : false
+}

@@ -1,0 +1,53 @@
+{
+  "AXTrusted" : true,
+  "demoPID" : 15139,
+  "editorBounds" : {
+    "height" : 272,
+    "width" : 1034,
+    "x" : 987,
+    "y" : 350.5
+  },
+  "kind" : "native-conversion-candidate-metadata",
+  "mode" : "japanese",
+  "pixelsRead" : false,
+  "postEventAllowed" : true,
+  "selectedRangeBounds" : {
+    "height" : 27.550003051757812,
+    "width" : 0,
+    "x" : 1071.62451171875,
+    "y" : 366.5
+  },
+  "selectedUTF16Range" : {
+    "length" : 0,
+    "location" : 7
+  },
+  "windows" : [
+    {
+      "bounds" : {
+        "Height" : 140,
+        "Width" : 124,
+        "X" : 1036,
+        "Y" : 403
+      },
+      "layer" : 20,
+      "owner" : "standalone-demo",
+      "pid" : 15139,
+      "rank" : 60,
+      "windowID" : 30187
+    },
+    {
+      "bounds" : {
+        "Height" : 882,
+        "Width" : 1050,
+        "X" : 979,
+        "Y" : 210
+      },
+      "layer" : 0,
+      "owner" : "standalone-demo",
+      "pid" : 15139,
+      "rank" : 63,
+      "windowID" : 30168
+    }
+  ],
+  "windowTitlesRead" : false
+}

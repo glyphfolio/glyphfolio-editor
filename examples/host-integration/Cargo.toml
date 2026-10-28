@@ -1,0 +1,15 @@
+[package]
+name = "glyphfolio-editor-host-example"
+description = "Generic headless embedding fixture for glyphfolio-editor"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+glyphfolio-editor-core.workspace = true
+tempfile = "=3.27.0"
+
+[lints]
+workspace = true

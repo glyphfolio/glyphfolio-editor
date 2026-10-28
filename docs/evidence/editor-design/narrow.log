@@ -1,0 +1,5 @@
+NATIVE_READY pid=37608 focused=false candidate=None
+SCREENSHOT_SAVED <workspace>/docs/evidence/editor-design/narrow.png
+NATIVE_SMOKE frames=12 revision=0 rows=22 screenshot=true os_ime=NOT_RUN screen_reader=NOT_RUN
+RENDER_METRICS mode=Rich RenderMetrics { total_blocks: 23, visible_blocks: 20, shaped_blocks: 0, cache_hits: 20, cache_entries: 20, cache_bytes: 194255, source_copied_bytes: 0, projection_copied_bytes: 0, parsed_bytes: 0, parse_mode: None, layout_microseconds: 1, accessibility_full_layout: false, composition_source_fallback: false, large_rich_source_fallback: false, exact_long_blocks: 0, largest_shaped_block_bytes: 0, reused_geometry: true, paint_rows: 20, paint_style_queries: 20, paint_style_spans: 4, paint_inline_rects: 1 }
+UI_CALLBACK_TIMES cold_us=97351 warm_samples=9 warm_p95_us=304 warm_max_us=307 elapsed_ms=306 gpu_time=NOT_MEASURED paint=NativePaintMetrics { considered_glyphs: 393, painted_glyphs: 346, style_candidates: 37, maximum_style_candidates_per_glyph: 1 }

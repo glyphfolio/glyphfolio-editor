@@ -1,0 +1,13 @@
+/target/
+/.DS_Store
+**/.DS_Store
+/artifacts/
+
+
+# Local credentials, temporary editor state and Python caches
+.env
+.env.*
+*.pem
+*.p12
+__pycache__/
+*.pyc

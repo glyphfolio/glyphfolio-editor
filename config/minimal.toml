@@ -1,0 +1,30 @@
+# A compact Source editor. Tools omitted from the toolbar remain available
+# through shortcuts/API; use [features] to disable an interaction explicitly.
+schema_version = 1
+
+[editor]
+default_presentation = "source"
+allow_experimental_rich = false
+
+[toolbar]
+visible = true
+groups = [["undo", "redo"], ["bold", "italic"], ["presentation"]]
+
+[appearance]
+theme = "system"
+frame = false
+
+[document]
+font_size = 16.0
+line_height = 1.6
+max_width = 760.0
+padding = 32.0
+inner_padding = 0.0
+
+[status]
+visible = true
+word_count = true
+
+[diagnostics]
+visible = false
+native_input_controls = false

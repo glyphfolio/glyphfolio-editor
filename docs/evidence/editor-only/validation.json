@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-28",
+  "change": "Remove all standalone header/title chrome above the embeddable editor toolbar; move settings to editor options",
+  "tests_passed": 211,
+  "clippy": "PASS",
+  "native_preview": "INSPECTED",
+  "screenshot": "../editor-only.png",
+  "unsigned_release_sha256": "03894de4c36260e46ed0d3d978f6a716ef24efbed807cfce2b0503e043d6451b",
+  "glyphfolio_applications_modified": false
+}
