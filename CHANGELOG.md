@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 preview — release candidate
+## 0.1.0 preview.1 — 2026-10-28
 
 Initial source preview of an original native Rust rich Markdown editor, with egui as its first adapter.
 

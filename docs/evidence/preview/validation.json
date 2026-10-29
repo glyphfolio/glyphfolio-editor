@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "status": "preview prepared locally; unpublished",
+  "status": "public source preview",
   "date": "2026-10-28",
   "host": "aarch64-apple-darwin",
   "rustc": "1.99.1",
@@ -26,26 +26,26 @@
   },
   "release_executable_sha256": "5cc1087425663cbbaf8b712d0ee3f630e14204930b533cdab1d719c25b180165",
   "not_run": [
-    "Remote CI",
     "Windows/Linux runtime",
     "Full cross-target dependency inventory (uncached target-only packages)",
     "New OS IME/clipboard/screen-reader qualification"
   ],
   "publication": {
-    "remote_configured": false,
-    "commit_created": false,
-    "tag_created": false,
-    "pushed": false,
+    "remote_configured": true,
+    "initial_commit": "1b68dfc0f4425366c529bd27df57218e39884386",
+    "pushed": true,
+    "release_tag": "v0.1.0-preview.1",
     "crates_published": false
   },
   "privacy": "Historical local paths redacted; original logs kept only under ignored target/.",
   "required_rust": "1.99.1",
-  "toolchain_policy": "Matches local validation; no older toolchain support claimed. Remote CI remains unrun.",
+  "toolchain_policy": "Rust 1.99.1 tested locally and in CI; stable also passed CI on all three platforms.",
   "toolchain_policy_recheck": {
     "required_rust": "1.99.1",
     "tests_passed": 230,
     "preview_checks": "PASS",
     "log": "rust-toolchain-policy-checks.log",
     "note": "Rechecked after raising Cargo rust-version and adopting isolate_lowest_one. Prior release binary evidence remains historical."
-  }
+  },
+  "github_ci": "github-ci.json"
 }

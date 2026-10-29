@@ -4,7 +4,7 @@ This independent library workspace contains the editor and its demos. Work here 
 
 ## Platform setup
 
-The workspace requires Rust 1.99.1, matching the locally tested toolchain. CI is configured for Rust 1.99.1 and stable on macOS, Windows and Linux; remote runs remain unexecuted. See [preview compatibility](PREVIEW_RELEASE.md) for the qualification scope.
+The workspace requires Rust 1.99.1, matching the locally tested toolchain. CI builds and automated checks passed for Rust 1.99.1 and stable on macOS, Windows and Linux. See the [initial CI run](https://github.com/glyphfolio/glyphfolio-editor/actions/runs/40791003700). See [preview compatibility](PREVIEW_RELEASE.md) for the qualification scope.
 
 - macOS: install Xcode Command Line Tools and the Rust toolchain.
 - Windows: install the MSVC Rust toolchain and Visual Studio C++ build tools.

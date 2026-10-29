@@ -1,0 +1,37 @@
+{
+  "run_url": "https://github.com/glyphfolio/glyphfolio-editor/actions/runs/40791003700",
+  "tested_commit": "1b68dfc0f4425366c529bd27df57218e39884386",
+  "scope": "Builds, tests, Clippy, rustdoc and source/dependency audits; not interactive UI qualification",
+  "jobs": [
+    {
+      "name": "test (windows-latest, stable)",
+      "conclusion": "success",
+      "url": "https://github.com/glyphfolio/glyphfolio-editor/actions/runs/40791003700/job/123175919890"
+    },
+    {
+      "name": "test (ubuntu-latest, stable)",
+      "conclusion": "success",
+      "url": "https://github.com/glyphfolio/glyphfolio-editor/actions/runs/40791003700/job/123175919997"
+    },
+    {
+      "name": "test (macos-latest, 1.99.1)",
+      "conclusion": "success",
+      "url": "https://github.com/glyphfolio/glyphfolio-editor/actions/runs/40791003700/job/123175920025"
+    },
+    {
+      "name": "test (macos-latest, stable)",
+      "conclusion": "success",
+      "url": "https://github.com/glyphfolio/glyphfolio-editor/actions/runs/40791003700/job/123175920092"
+    },
+    {
+      "name": "test (windows-latest, 1.99.1)",
+      "conclusion": "success",
+      "url": "https://github.com/glyphfolio/glyphfolio-editor/actions/runs/40791003700/job/123175920163"
+    },
+    {
+      "name": "test (ubuntu-latest, 1.99.1)",
+      "conclusion": "success",
+      "url": "https://github.com/glyphfolio/glyphfolio-editor/actions/runs/40791003700/job/123175920180"
+    }
+  ]
+}
